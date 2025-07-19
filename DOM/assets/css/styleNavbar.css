@@ -196,3 +196,18 @@ body {
     display: block;
   }
 }
+
+
+.menu-links a {
+  text-decoration: none;
+  color: #f3e7d8; /* o el color que estás usando en tu menú móvil */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: #ffdda1;
+}
