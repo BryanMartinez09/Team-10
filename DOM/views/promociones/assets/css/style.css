@@ -1,0 +1,44 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/*Estilos generales*/
+.promociones {
+  background-color: RGB(35, 25, 20)
+}
+
+.promociones .texto-cafecito {
+  text-align: center;
+  padding-top: 15px;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5em;
+  color: #f2eae2;
+}
+
+.promociones .cafecito-cuerpo {
+  text-align: center;
+  font-size: 1.2em;
+  color: #f2eae2;
+  margin-bottom: 20px;
+}
+
+.cafe {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-color: #f2eae2;
+}
+
+.cafe img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cafe-del-dia {
+  border: 4px solid #c67c4e;
+  box-shadow: 0 0 15px rgba(198, 124, 78, 0.7);
+  background-color: #fff3e0;
+}
