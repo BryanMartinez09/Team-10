@@ -211,3 +211,40 @@ body {
 .menu-links a:hover {
   color: #ffdda1;
 }
+
+@media (max-width: 768px) {
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    gap: 12px;
+  }
+
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle i {
+    font-size: 20px;
+  }
+
+  .logo img {
+    height: 48px;
+  }
+}
+

@@ -364,3 +364,11 @@ footer {
   color: #795643;
   min-width: 20px;
 }
+
+/* Codigo que me ayudo */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
