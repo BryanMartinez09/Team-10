@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Monte Café</title>
+
+  <link rel="stylesheet" href="../../assets/css/styleNavbar.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../assets/css/stylefooter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" data-aos="fade-down">
+    <div class="navbar-container">
+      <div class="logo">
+        <img src="../../assets/img/Monte-Cafe.png" alt="Logo Café" />
+      </div>
+
+      <div class="nav-desktop">
+        <nav class="nav-links">
+          <a href="../../index.html"><i class="fas fa-home"></i> Inicio</a>
+          <a href="../quienesSomos/index.html"><i class="fas fa-users"></i> ¿Quiénes somos?</a>
+          <a href="../productos/index.html"><i class="fas fa-mug-hot"></i> Productos</a>
+          <a href="../promociones/index.html"><i class="fas fa-tags"></i> Ofertas</a>
+          <a href="index.html" class="active"><i class="fas fa-envelope"></i> Contacto</a>
+        </nav>
+
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Buscar..." />
+        </div>
+      </div>
+
+      <div class="nav-icons">
+        <i class="far fa-heart"></i>
+        <i class="far fa-user"></i>
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENÚ MÓVIL DESLIZABLE -->
+  <aside class="mobile-menu" id="mobileMenu">
+    <div class="menu-header">
+      <span id="closeMenu" class="close-btn"><i class="fas fa-times"></i></span>
+    </div>
+    <ul class="menu-links">
+      <li><a href="../../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+      <li><a href="../quienesSomos/index.html"><i class="fas fa-users"></i> ¿Quiénes somos?</a></li>
+      <li><a href="../productos/index.html"><i class="fas fa-store"></i> Productos</a></li>
+      <li><a href="../promociones/index.html"><i class="fas fa-tags"></i> Ofertas</a></li>
+      <li><a href="index.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+    </ul>
+    <div class="menu-search">
+      <input type="text" placeholder="Buscar..." />
+      <i class="fas fa-search"></i>
+    </div>
+  </aside>
+
+  <!-- SECCIÓN DE CONTACTO -->
+  <main>
+    <section class="contact-section" data-aos="fade-up">
+      <div class="contact-container">
+        <h2><i class="fas fa-envelope"></i> Contáctanos</h2>
+        <p>¿Tenés dudas, sugerencias o querés saber más sobre Monte Café? ¡Escribinos!</p>
+        
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="nombre"><i class="bi bi-person-fill"></i> Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="form-group">
+  <label for="telefono"><i class="bi bi-telephone-fill"></i> Teléfono</label>
+  <input type="tel" id="telefono" name="telefono" pattern="[0-9]{4}-[0-9]{4}" placeholder="0000-0000" required>
+</div>
+
+
+          <div class="form-group">
+            <label for="email"><i class="bi bi-envelope-fill"></i> Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje"><i class="bi bi-chat-left-text-fill"></i> Escríbenos un mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Enviar <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </section>
+  </main>
+
+  <!-- FOOTER COMPLETO -->
+  <footer class="footer" data-aos="fade-up">
+    <div class="footer-container">
+      <div class="footer-section logo-newsletter">
+        <img src="../../assets/img/Monte-Cafe.png" alt="Monte Café Logo" class="footer-logo">
+        <h3>Suscríbete a nuestro boletín</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="monteCafé@gmail.com">
+          <button type="submit">Suscribirme</button>
+        </form>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section soporte">
+        <h4>Soporte</h4>
+        <p><i class="fas fa-phone-alt"></i> +503 2555-1122</p>
+      </div>
+
+      <div class="footer-section legal">
+        <h4>Legal</h4>
+        <p><a href="#">Políticas de compra</a></p>
+      </div>
+
+      <div class="footer-section contacto">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Cantón El Carmen, Chalatenango</p>
+        <p><i class="fas fa-envelope"></i> contacto@montecafe.com</p>
+        <p><i class="fas fa-phone"></i> +503 2555-1122</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Monte Café. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./contacto.js"></script>
+  <script src="../../assets/js/contacto.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true
+    });
+  </script>
+</body>
+</html>
