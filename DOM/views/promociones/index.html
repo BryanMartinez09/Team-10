@@ -1,11 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffe late</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>promociones</title>
+
+  <link rel="stylesheet" href="../../assets/css/styleNavbar.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/stylefooter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Log</h1>
+
+<!-- NAVBAR -->
+<header class="navbar" data-aos="fade-down">
+  <div class="navbar-container">
+    <div class="logo">
+      <img src="../../assets/img/Monte-Cafe.png" alt="Logo Café" />
+    </div>
+
+    <div class="nav-desktop">
+      <nav class="nav-links">
+        <a href="../../index.html" class="active"><i class="fas fa-home"></i> Inicio</a>
+        <a href="../../views/quienesSomos/index.html"><i class="fas fa-users"></i> ¿Quiénes somos?</a>
+        <a href="../../views/productos/index.html"><i class="fas fa-mug-hot"></i> Productos</a>
+        <a href="../../views/promociones/index.html"><i class="fas fa-tags"></i> Ofertas</a>
+         <a href="../../views/contacto/index.html"><i class="fas fa-envelope"></i> Contacto</a>
+
+      </nav>
+
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Buscar..." />
+      </div>
+    </div>
+
+    <div class="nav-icons">
+      <i class="far fa-heart"></i>
+      <i class="far fa-user"></i>
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MENÚ MÓVIL DESLIZABLE -->
+<aside class="mobile-menu" id="mobileMenu">
+  <div class="menu-header">
+    <span id="closeMenu" class="close-btn"><i class="fas fa-times"></i></span>
+  </div>
+<ul class="menu-links">
+  <li><a href="../../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+  <li><a href="../../views/quienesSomos/index.html"><i class="fas fa-users"></i> ¿Quiénes somos?</a></li>
+  <li><a href="../../views/productos/index.html"><i class="fas fa-store"></i> Productos</a></li>
+  <li><a href="../../views/promociones/index.html"><i class="fas fa-tags"></i> Ofertas</a></li>
+  <li><a href="../../views/contacto/index.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+</ul>
+
+  <div class="menu-search">
+    <input type="text" placeholder="Buscar..." />
+    <i class="fas fa-search"></i>
+  </div>
+</aside>
+<!-- LISTA DE PROMOCIONES -->
+<main>
+    <section class="promociones" data-aos="fade-up">
+        <h1 class="texto-cafecito">Cafecito del día</h1>
+        <p class="cafecito-cuerpo">Disfruta de nuestra gran variedad de sabores, rebiendo un gustito distinto cada día. El café seleccionado tiene descuento el día de hoy.</p>
+        <div id="cafes-container" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+            <a href="../../views/productos/index.html" style="color: inherit;">
+                <div class="cafe" style="width: 18rem;">
+                        <img src="./assets/img/cafe-lunes.png" class="card-img-top" alt="Café del lunes">
+                        <div class="card-body">
+                            <h5 class="card-title">Lunes</h5>
+                            <p class="card-text">Cafe Especiado con canela, con tostado más oscuro</p>
+                        </div>
+                </div>
+            </a>
+            <a href="../../views/productos/index.html" style="color: inherit;">
+                <div class="cafe" style="width: 18rem;">
+                    <img src="./assets/img/cafe-martes.png" class="card-img-top" alt="Café del martes">
+                    <div class="card-body">
+                        <h5 class="card-title">Martes</h5>
+                        <p class="card-text">Pochita</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../../views/productos/index.html" style="color: inherit;">
+                <div class="cafe" style="width: 18rem;">
+                    <img src="./assets/img/cafe-miercoles.png" class="card-img-top" alt="Café del miércoles">
+                    <div class="card-body">
+                        <h5 class="card-title">Miercoles</h5>
+                        <p class="card-text">Pochita</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../../views/productos/index.html" style="color: inherit;">
+                <div class="cafe" style="width: 18rem;">
+                    <img src="./assets/img/cafe-jueves.png" class="card-img-top" alt="Café del jueves">
+                    <div class="card-body">
+                        <h5 class="card-title">Jueves</h5>
+                        <p class="card-text">Pochita</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../../views/productos/index.html" style="color: inherit;">
+                <div class="cafe" style="width: 18rem;">
+                    <img src="./assets/img/cafe-viernes.png" class="card-img-top" alt="Café del viernes">
+                    <div class="card-body">
+                        <h5 class="card-title">Viernes</h5>
+                        <p class="card-text">Pochita</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../../views/productos/index.html" style="color: inherit;">
+                <div class="cafe" style="width: 18rem;">
+                    <img src="./assets/img/cafe-sabado.png" class="card-img-top" alt="Café del sábado">
+                    <div class="card-body">
+                        <h5 class="card-title">Sábado</h5>
+                        <p class="card-text">Pochita</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../../views/productos/index.html" style="color: inherit;">
+                <div class="cafe" style="width: 18rem;">
+                    <img src="./assets/img/cafe-domingo.png" class="card-img-top" alt="Café del domingo">
+                    <div class="card-body">
+                        <h5 class="card-title">Domingo</h5>
+                        <p class="card-text">Pochita</p>
+                    </div>
+                </div>
+            </a>
+</div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer" data-aos="fade-up">
+  <div class="footer-container">
+    <div class="footer-section logo-newsletter">
+      <img src="../../assets/img/Monte-Cafe.png" alt="Monte Café Logo" class="footer-logo">
+      <h3>Suscríbete a nuestro boletín</h3>
+      <form class="newsletter-form">
+        <input type="email" placeholder="monteCafé@gmail.com">
+        <button type="submit">Suscribirme</button>
+      </form>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section soporte">
+      <h4>Soporte</h4>
+      <p><i class="fas fa-phone-alt"></i> +503 2555-1122</p>
+    </div>
+
+    <div class="footer-section legal">
+      <h4>Legal</h4>
+      <p><a href="#">Políticas de compra</a></p>
+    </div>
+
+    <div class="footer-section contacto">
+      <h4>Contacto</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Cantón El Carmen, Chalatenango</p>
+      <p><i class="fas fa-envelope"></i> contacto@montecafe.com</p>
+      <p><i class="fas fa-phone"></i> +503 2555-1122</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Monte Café. Todos los derechos reservados.
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="../../assets/js/navbar.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="./assets/js/promo.js"></script>
+<script>
+  AOS.init({
+  duration: 1000,
+  once: false,
+  mirror: true,
+});
+
+</script>
 </body>
 </html>
