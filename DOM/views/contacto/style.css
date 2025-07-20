@@ -1,0 +1,115 @@
+/* --- CONTACTO --- */
+.contact-section {
+  background-color: #f8f1ea;
+  padding: 80px 20px;
+  color: #3a241a;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #6f4f3a;
+}
+
+.contact-section p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #4e3829;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Formulario */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(106, 69, 43, 0.1);
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #3a241a;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+  background-color: #fefefe;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #a3682e;
+  outline: none;
+}
+
+/* Botón enviar */
+.submit-btn {
+  background-color: #a3682e;
+  color: white;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #864c1c;
+}
+
+/* Información adicional */
+.contact-info {
+  margin-top: 40px;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: #6f4f3a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 26px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #4a3327;
+  font-size: 0.85rem;
+  color: #e6d5c2;
+}
